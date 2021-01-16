@@ -1,0 +1,19 @@
+.logo {
+    margin-top: 60px;
+}
+
+#reminder-window {
+    color: grey;
+    height: 80px;
+    border: 2px solid rgb(127, 148, 130);
+}
+
+#display-reminder {
+    font-family: korolev-compressed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px;
+}
