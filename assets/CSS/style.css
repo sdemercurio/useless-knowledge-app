@@ -1,9 +1,14 @@
-.logo {
+body {
+    margin-top: 25px;
+}
+
+header {
     margin-top: 60px;
 }
 
 #reminder-window {
     color: grey;
+    width: 370px;
     height: 80px;
     border: 2px solid rgb(127, 148, 130);
 }
@@ -16,4 +21,16 @@
     letter-spacing: 1px;
     text-align: center;
     padding: 20px;
+}
+
+#gif {
+    width: 370px;
+    height: 190px;
+    border: solid black;
+    border-width: 1px;
+}
+
+#calendar {
+    width: 370px;
+    height: 190px;
 }
