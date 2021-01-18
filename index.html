@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Obliti</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/qob5aoz.css">
     <link rel="stylesheet" href="assets/CSS/style.css" />
   </head>
@@ -32,15 +32,18 @@
   </div>
 
   <!------------------------------ Calendar ------------------------------->
+  <div class="calendar-container">
   <div id="calendar">
-  <!-- <img src="assets/Images/placeholder.png" alt="calendar"> -->
-  <div class="month">
-    <i class="fas fa-angle-left prev"></i>
+    
+    <div class="month">
+      <p class="prev">Prev</p>
     <div class="date">
-      <h1>January</h1>
+      <h4>January</h4>
       <p>Mon January 18, 2021</p>
-      <i class="fas fa-angle-left next"></i>
     </div>
+    <p class="next">Next</p>
+    </div>
+
     <div class="weekdays">
       <div>Sun</div>
       <div>Mon</div>
@@ -49,6 +52,7 @@
       <div>Thu</div>
       <div>Fri</div>
       <div>Sat</div>
+    </div>
       <div class="days">
         <div class="prev-date">27</div>
         <div class="prev-date">28</div>
@@ -93,9 +97,8 @@
         <div class="next-date">5</div>
         <div class="next-date">6</div>
       </div>
-    </div>
   </div>
-  </div>
+</div>
 </div>
 
   <!---------------------------- Date and Time ---------------------------->
