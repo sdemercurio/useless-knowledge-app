@@ -5,27 +5,28 @@
 }
 
 h3 {
-    font-family: korolev-military-stencil, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    
     font-size: 40px;
+    align-content: center;
 
 }
 
 #time {
+    height: 70px;
     display: inline-block;
     float: right;
     text-align: center;
     margin-right: 30px;
-    border: solid black;
+    border: dotted rgb(163, 159, 159);
     border-width: 1px;
     width: 225px;
 }
 
 #date {
+    height: 70px;
     display: inline-block;
     text-align: center;
-    border: solid black;
+    border: dotted rgb(163, 159, 159);
     border-width: 1px;
     width: 500px;
 }
@@ -34,6 +35,7 @@ h3 {
     height: 55px;
     width: 740px;
     border: solid black;
+    border-radius: 10px;
     border-width: 1px;
     
 
@@ -44,6 +46,7 @@ h3 {
     width: 40px;
     border: solid black;
     border-width: 1px;
+    border-radius: 5px 20px 5px;
     background-color: rgb(161, 159, 158);
     z-index: -1;
     position:absolute;
@@ -57,6 +60,7 @@ h3 {
     height: 40px;
     width: 215px;
     border: solid black;
+    border-radius: 20px;
     border-width: 1px;
     background-color: rgb(161, 159, 158);
     float: right;
