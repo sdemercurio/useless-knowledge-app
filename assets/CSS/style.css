@@ -6,10 +6,7 @@
 
 body {
     margin-top: 25px;
-}
-
-header {
-    margin-top: 60px;
+    margin-left: 50px;
 }
 
 #reminder-window {
@@ -34,74 +31,18 @@ header {
     height: 190px;
     border: solid black;
     border-width: 1px;
-}
-
-.calendar-container {
-    width: 370px;
-    height: 190px;
-    font-size: 62.5%;
-    width: 370px;
-    height:auto;
-    background-color: rgb(114, 108, 105);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-    margin-bottom: 30px;
-}
-
-#calendar {
-    width: 370px;
-    height:430px;
-    background-color:  rgb(170, 159, 154);
+    background-color:  rgb(209, 196, 190);
     box-shadow: 0 0.5rem 1rem  rgb(65, 63, 62);
 }
 
-.month  {
-    width: 100%;
-    height: 75px;
-    background-color: rgb(66, 62, 60);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    text-emphasis: center;
+#gif-display {
+    font-family: korolev-compressed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 1px;
     text-align: center;
-
-}
-
-.month p {
-    font-size: 12px;
-    cursor: pointer;
-    display: inline-block;
-}
-
-.weekdays   {
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    font-size: 12px;
-    background-color: rgb(131, 123, 119);;
-}
-
-.days {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 10px 10px 10px;
-}
-
-.days div {
-    font-size: 10px;
-    padding-left: 3px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: left;
-    border: solid white;
-    border-width: 1px;
-    
+    justify-content: center;
+    padding: 60px;
 }
 
