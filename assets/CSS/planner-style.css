@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-family: korolev-military-stencil, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+
+}
+
+#time {
+    display: inline-block;
+    float: right;
+    text-align: center;
+    margin-right: 30px;
+    border: solid black;
+    border-width: 1px;
+    width: 225px;
+}
+
+#date {
+    display: inline-block;
+    text-align: center;
+    border: solid black;
+    border-width: 1px;
+    width: 500px;
+}
+
+.hour-block {
+    height: 55px;
+    width: 740px;
+    border: solid black;
+    border-width: 1px;
+    
+
+}
+
+#check-box {
+    height: 40px;
+    width: 40px;
+    border: solid black;
+    border-width: 1px;
+    background-color: rgb(161, 159, 158);
+    z-index: -1;
+    position:absolute;
+    margin: 5px 0 0 5px;
+}
+#description {
+    background-color: rgb(209, 196, 190);
+}
+
+#date-time-set {
+    height: 40px;
+    width: 215px;
+    border: solid black;
+    border-width: 1px;
+    background-color: rgb(161, 159, 158);
+    float: right;
+    margin: 5px 5px 0 0;
+}
