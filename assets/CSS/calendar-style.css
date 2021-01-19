@@ -4,10 +4,8 @@
     box-sizing: border-box;
 }
 
-h3 {
-    font-family: korolev-military-stencil, sans-serif;
-    font-weight: 100;
-    font-style: normal;
+#current-month {
+    
     font-size: 5px;
     margin-top: 30px;
 }
