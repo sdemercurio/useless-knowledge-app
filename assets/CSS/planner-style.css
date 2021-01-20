@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-h3 {
-    
-    font-size: 40px;
-    align-content: center;
-
-}
 
 #time {
     height: 70px;
@@ -19,7 +13,7 @@ h3 {
     margin-right: 30px;
     border: dotted rgb(163, 159, 159);
     border-width: 1px;
-    width: 225px;
+    width: 275px;
 }
 
 #date {
@@ -28,7 +22,7 @@ h3 {
     text-align: center;
     border: dotted rgb(163, 159, 159);
     border-width: 1px;
-    width: 500px;
+    width: 450px;
 }
 
 .hour-block {
@@ -48,9 +42,10 @@ h3 {
     border-width: 1px;
     border-radius: 5px 20px 5px;
     background-color: rgb(161, 159, 158);
+    float: right;
     z-index: -1;
-    position:absolute;
-    margin: 5px 0 0 5px;
+    margin: 5px 5px 0 0;
+    
 }
 #description {
     background-color: rgb(209, 196, 190);
@@ -64,5 +59,5 @@ h3 {
     border-width: 1px;
     background-color: rgb(161, 159, 158);
     float: right;
-    margin: 5px 5px 0 0;
+    margin: 5px 5px 0 5px;
 }
