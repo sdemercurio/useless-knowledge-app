@@ -6,6 +6,9 @@
 // apiKey = 
 // queryURL =
 
+//============ Google Search API =====
+// apiKey = AIzaSyDkqfR8pTyvmQiYHKkidKw0iydwKLpBMDw
+
 // =========== FUNCTIONS =============
 //------------ Calendar --------------
 // Months toggle previous/next
