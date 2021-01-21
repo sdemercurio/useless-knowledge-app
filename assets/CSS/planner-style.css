@@ -6,6 +6,7 @@
 
 #logo {
     float: left;
+
 }
 
 
@@ -38,11 +39,11 @@
     display:inline-block;
     float: right;
     margin-top: 50px;
+    margin-right: 30px;
 }
 
 .hour-block {
     height: 55px;
-    width: 740px;
     border: solid black;
     border-radius: 10px;
     border-width: 1px;
@@ -76,3 +77,5 @@
     float: right;
     margin: 5px 5px 0 5px;
 }
+
+  
