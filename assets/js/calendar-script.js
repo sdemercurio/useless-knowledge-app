@@ -158,9 +158,36 @@ function showCalFacts() {
         factDiv.append(factInfo);
         $("#date-fact").append(factDiv);
     })
-    }
+    
+}
     
     showCalFacts();
+
+function getNumFacts() {
+
+    let input = $("#input").val();
+
+    fetch(`http://numbersapi.com/${input}`)
+    .then((response) => response.text())
+    .then((data) => {
+        console.log(data);
     
+        let numFactDiv = $("<div>").addClass("card col-3-lg");
+        let numFactInfo = $("<p>").addClass("num-fact-display").html(data);
+    
+        numFactDiv.append(numFactInfo);
+        $("#input-fact").append(numFactDiv);
+    })
+    }
 
+    // Search Button
+  //=======================================================
+  $("#search").on("click", function () {
+    let search = ""
+    search = $("#input").val();
 
+    $("#input").empty();
+
+    getNumFacts(search);
+    
+  });
