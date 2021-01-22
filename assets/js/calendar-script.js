@@ -47,11 +47,14 @@ $("#current-date").html(date.toDateString());
 
 // dynamically adding days
 let days = "";
+console.log(days);
  // This is how we get the the first day of the month on the 
  // correct day, and the last few days of the previous month
 for(let x = firstDayIndex; x > 0; x--) {
     days += `<div class="prev-date">${prevLastDay -x + 1}</div>`
 }
+
+
 
 // Highlight current day
 for( let i = 1; i <= lastDay; i++) {
@@ -67,6 +70,8 @@ for(let j = 1; j <= nextDays; j++) {
     days += `<div class="next-date">${j}</div>`;
     $(".days").html(days);
 }
+
+
 };
 
 
@@ -82,4 +87,80 @@ $(".next").on("click", function () {
 }); 
 
 renderCalendar();
+
+
+
+// document.querySelectorAll(".days").forEach(days => {
+//     days.addEventListener("click", event => {
+//         console.log(event.currentTarget)
+//     })
+// })
+
+//====================== WIKIPEDIA API =====================================
+
+// function searchup(s){
+//     var ids = "";
+//     var links = [];
+//     var results = [];
+//     fetch('https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&origin=*&srsearch='+s)
+//     .then(response => {
+//     return response.json();
+//     })
+//     .then(result => {
+//     results = result.query.search;
+//     for(var i=0; i<results.length; i++){
+//     if(results[i+1] != null){
+//     ids += results[i].pageid+"|";
+//     }
+//     else{
+//     ids+=results[i].pageid;
+//     }
+//     }
+//     })
+//     .then(a => {
+//     fetch("https://en.wikipedia.org/w/api.php?action=query&prop=info&inprop=url&origin=*&format=json&pageids="+ids)
+//     .then(idresult => {
+//     return idresult.json();
+//     })
+//     .then(idresult =>{
+//     for(i in idresult.query.pages){
+//     links.push(idresult.query.pages[i].fullurl);
+//     }
+//     })
+//     .then(g =>{
+//     document.getElementById("output").innerHTML="";
+//     for(var i=0; i<results.length; i++){
+//     document.getElementById("output").innerHTML+="<a href='"+links[i]+"' target='_blank'>"+results[i].title+"</a><br>"+results[i].snippet+"<br>";
+//     }
+//     });
+//     });
+    
+//     }
+
+// =============================== NUMBERS API ==================================
+// let queryURL = "http://numbersapi.com/01/22/date";
+//     console.log(queryUrl);
+
+function showCalFacts() {
+
+    
+
+    // Change param to "date-selected" or something
+    // fetch(`http://numbersapi.com/${select-date}date`)
+    fetch("http://numbersapi.com/01/22/date")
+    .then((response) => response.text())
+    .then((data) => {
+        console.log(data);
+    
+        let factDiv = $("<div>").addClass("card col-3-lg");
+        let factInfo = $("<p>").addClass("fact-display").html(data);
+    
+        factDiv.append(factInfo);
+        $("#date-fact").append(factDiv);
+    })
+    }
+    
+    showCalFacts();
+    
+
 
