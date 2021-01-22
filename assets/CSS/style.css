@@ -1,3 +1,48 @@
-.logo {
-    margin-top: 60px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+#reminder-window {
+    color: grey;
+    width: 370px;
+    height: 80px;
+    border: 2px solid rgb(127, 148, 130);
+}
+
+#display-reminder {
+    font-family: korolev-compressed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px;
+}
+
+#gif {
+    width: 370px;
+    height: 190px;
+    border: solid black;
+    border-width: 1px;
+    background-color:  rgb(209, 196, 190);
+    box-shadow: 0 0.5rem 1rem  rgb(65, 63, 62);
+}
+
+#gif-display {
+    font-family: korolev-compressed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    justify-content: center;
+    padding: 60px;
+}
+

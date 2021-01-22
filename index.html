@@ -1,63 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Obliti</title>
-    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    <link rel="stylesheet" href="assets/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/qob5aoz.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/calendar-style.css" />
+    <link rel="stylesheet" href="assets/css/planner-style.css" />
   </head>
   <body>
-
-<header>
-  <!-- Sub Navigation -->
-  <!-- <div class="top-bar">
-    <div class="top-bar-left">
-      <ul class="menu">
-        <li><a href="#">One</a></li>
-        <li><a href="#">Two</a></li>
-        <li><a href="#">Three</a></li>
-        <li><a href="#">Four</a></li>
-      </ul>
+    <!------------------------------- Aside --------------------------------->
+    <div class="row">
+      <!------------------------------- Logo ---------------------------------->
+      <div class="column" id="logo">
+        <img src="assets/Images/Obliti_logo.png" alt="obliti logo" />
+      </div>
     </div>
-    <div class="top-bar-right">
-      <ul class="menu">
-        <li><input type="search" placeholder="Search"></li>
-        <li><button type="button" class="button">Search</button></li>
-      </ul>
-    </div>
-  </div> -->
-  <!-- /Sub Navigation -->
+    <br />
+    <!---------------------------- Reminder window -------------------------->
+    <div class="small-12 medium-6 large-4 columns">
+      <div id="reminder-window">
+        <p id="display-reminder">Reminder displays here</p>
+      </div>
+      <!-------------------------------- Gif ---------------------------------->
+      <div id="gif">
+        <p id="gif-display">gif</p>
+      </div>
 
-  <!-- logo and ad break -->
-  <div class="row">
-    <div class="medium-4 columns logo" id="logo">
-      <img src="assets/Images/Obliti_logo.png" alt="company logo">
-    </div>
-    <div class="medium-8 columns">
-      <!-- <img src="https://placehold.it/900x175&text=Responsive Ads - ZURB Playground/333" alt="advertisement for deep fried Twinkies"> -->
-    </div>
-  </div>
-</header>
-<br>
-<!------------------------------ This is the column with the gi-->
-<div class="row">
-  <div class="medium-4 columns">
-    <h3 id="reminder-alert">Reminder goes here</h3>
-    <p id="gif"><img src="assets/Images/placeholder.png" alt="gif" alt="advertisement for deep fried Twinkies"></p>
-    <p id="calendar"><img src="assets/Images/placeholder.png" alt="calendar"></p>
-  </div>
-  <h3 id="date-time">Date and Time</h3>
-  <div class="medium-8 columns" id="planner">
-    <p><img src="assets/Images/placeholder-planner.png" alt="planner placeholder"></p>
-  </div>
-</div>
+      <!------------------------------ Calendar ------------------------------->
+      <div class="calendar-container">
+        <div id="calendar">
+          <div class="month">
+            <p class="prev">Prev</p>
+            <div class="date">
+              <h3 id="current-month"></h3>
+              <h4 id="current-date"></h4>
+            </div>
+            <p class="next">Next</p>
+          </div>
 
+          <div class="weekdays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="days">
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!---------------------------- Date and Time ---------------------------->
+
+    <div class="row">
+       <!---------------------------- Date and Time ---------------------------->
+
+    <div class="row">
+      <!----------------------- Numbers API info display ---------------------->
+      
+      <div class="small-12 medium-6 large-8 columns">
+          <input id="input" placeholder="Type a number. Any number."><button id="search">Search</button>
+          <div id="output"></div>
+      <!--------------- This is where the user input query will display ------->
+          <div id="input-fact"></div>
+      <!--------------- This is where the calendar click will display --------->
+          <div id="date-fact">
+            <h2 id="on-this-day">On this Day</h2>
+          </div>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/calendar-script.js"></script>
     <script>
       $(document).foundation();
     </script>
