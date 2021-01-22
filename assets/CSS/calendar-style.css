@@ -112,3 +112,17 @@
     background-color: maroon;
 }
 
+#on-this-day {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 75px;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 25px;
+}
+
