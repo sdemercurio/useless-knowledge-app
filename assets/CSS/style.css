@@ -9,6 +9,10 @@ body {
     margin-left: 50px;
 }
 
+#left-column {
+    padding: 0px !important;
+}
+
 #reminder-window {
     color: grey;
     width: 370px;

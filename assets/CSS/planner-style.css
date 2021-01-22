@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+#logo {
+    float: left;
+
+}
+
 
 #time {
     height: 70px;
@@ -13,7 +18,7 @@
     margin-right: 30px;
     border: dotted rgb(163, 159, 159);
     border-width: 1px;
-    width: 225px;
+    width: 275px;
 }
 
 #date {
@@ -22,12 +27,23 @@
     text-align: center;
     border: dotted rgb(163, 159, 159);
     border-width: 1px;
-    width: 500px;
+    width: 450px;
+}
+
+#randomFact {
+    height: 55px;
+    width: 740px;
+    border: dotted rgb(163, 159, 159);
+    border-radius: 10px;
+    border-width: 1px;
+    display:inline-block;
+    float: right;
+    margin-top: 50px;
+    margin-right: 30px;
 }
 
 .hour-block {
     height: 55px;
-    width: 740px;
     border: solid black;
     border-radius: 10px;
     border-width: 1px;
@@ -35,16 +51,17 @@
 
 }
 
-#check-box {
+#saveBtn {
     height: 40px;
     width: 40px;
     border: solid black;
     border-width: 1px;
     border-radius: 5px 20px 5px;
     background-color: rgb(161, 159, 158);
+    float: right;
     z-index: -1;
-    position:absolute;
-    margin: 5px 0 0 5px;
+    margin: 5px 5px 0 0;
+    
 }
 #description {
     background-color: rgb(209, 196, 190);
@@ -58,5 +75,7 @@
     border-width: 1px;
     background-color: rgb(161, 159, 158);
     float: right;
-    margin: 5px 5px 0 0;
+    margin: 5px 5px 0 5px;
 }
+
+  
