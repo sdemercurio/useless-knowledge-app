@@ -27,8 +27,8 @@ $(document).ready(function main () {
 //     console.log(response.trivia[2])
 
 
-//     var fact = $("<h3>").text(response.trivia[2])
-//     $(".randomFactToday").prepend(fact)
+    var fact = $("<h3>").text(response.trivia[2])
+    $(".randomFactToday").prepend(fact)
 
 // });
 
