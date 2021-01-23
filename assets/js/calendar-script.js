@@ -98,12 +98,6 @@ const renderCalendar = () => {
   $(".days").html(days);
 };
 
-$(".days").on("click", function(event) {
-  let dataMonth = $(event.target).attr("data-month");
-  let dataDay = $(event.target).attr("data-day");
-    
-})
-
 // click event for previous and next months
 $(".prev").on("click", function () {
   date.setMonth(date.getMonth() - 1);
@@ -169,9 +163,15 @@ renderCalendar();
 //     console.log(queryUrl);
 
 function showCalFacts() {
+
+    $(".days").on("click", function(event) {
+        let dataMonth = $(event.target).attr("data-month");
+        let dataDay = $(event.target).attr("data-day");
+          
+      
   // Change param to "date-selected" or something
   // fetch(`http://numbersapi.com/${select-date}date`)
-  fetch("http://numbersapi.com/1/23/date")
+  fetch("http://numbersapi.com/" + dataMonth + "/" + dataDay + "/date")
     .then((response) => response.text())
     .then((data) => {
       console.log(data);
@@ -181,7 +181,9 @@ function showCalFacts() {
 
       factDiv.append(factInfo);
       $("#date-fact").append(factDiv);
+
     });
+});
 }
 
 showCalFacts();
@@ -199,6 +201,7 @@ function getNumFacts() {
 
       numFactDiv.append(numFactInfo);
       $("#input-fact").append(numFactDiv);
+      
     });
 }
 
@@ -212,3 +215,5 @@ $("#search").on("click", function () {
 
   getNumFacts(search);
 });
+
+
