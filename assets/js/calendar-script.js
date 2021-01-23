@@ -155,7 +155,7 @@ renderCalendar();
 function showCalFacts() {
   // Change param to "date-selected" or something
   // fetch(`http://numbersapi.com/${select-date}date`)
-  fetch("http://numbersapi.com/01/22/date")
+  fetch("http://numbersapi.com/01/23/date")
     .then((response) => response.text())
     .then((data) => {
       console.log(data);
