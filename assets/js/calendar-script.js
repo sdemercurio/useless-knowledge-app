@@ -51,7 +51,7 @@ console.log(days);
  // This is how we get the the first day of the month on the 
  // correct day, and the last few days of the previous month
 for(let x = firstDayIndex; x > 0; x--) {
-    days += `<div class="prev-date">${prevLastDay -x + 1}</div>`
+    days += `<div class="prev-date">${prevLastDay -x + 1}</div>`;
 }
 
 
@@ -59,9 +59,11 @@ for(let x = firstDayIndex; x > 0; x--) {
 // Highlight current day
 for( let i = 1; i <= lastDay; i++) {
     if(i === new Date().getDate() && date.getMonth() === new Date().getMonth()) {
-        days += `<div class="today">${i}</div>`;
+        days += `<div id=${i} class="today">${i}</div>`;
     }else{
-        days += `<div>${i}</div>`;
+        let div = `<div id=${i} class="day">${i}</div>`;
+        days += div;
+        $(".days").html(days);
     }
 }
 // displaying the first few days of the next month
@@ -85,6 +87,10 @@ $(".next").on("click", function () {
     date.setMonth(date.getMonth() + 1)
     renderCalendar();
 }); 
+
+$(".day").on("click", function(event){
+  console.log(event);
+});
 
 renderCalendar();
 
@@ -191,3 +197,9 @@ function getNumFacts() {
     getNumFacts(search);
     
   });
+
+  console.log(new Date().getDate()); 
+  
+  console.log(date.getMonth()); 
+  
+  console.log(new Date().getMonth());
