@@ -1,9 +1,5 @@
 $(document).ready(function main () {
     randomFact()
-    //============ Time and Date API =====
-// apiKey = 
-// queryURL =
-
 
 // LEAVE EVERYTHING BELOW THIS LINE OFF (for api purposes)
 
@@ -35,24 +31,6 @@ $(document).ready(function main () {
 // }
 
 // LEAVE EVERYTHING ABOVE THIS LINE OFF
-
-
-//============ Giphy API =============
-// apiKey = 
-// queryURL =
-
-//============ Google Search API =====
-// apiKey = AIzaSyDkqfR8pTyvmQiYHKkidKw0iydwKLpBMDw
-
-// =========== FUNCTIONS =============
-//------------ Calendar --------------
-// Months toggle previous/next
-// Days can be selected to display in planner
-
-//------------ Planner ---------------
-//Reminder, date, and time are entered and saved in local storage: saveReminder()
-//Reminder does not disappear when page is refreshed.
-//Time slots reflect the hours of the day in real time: loadRows()
 
 
 })
