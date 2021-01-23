@@ -1,7 +1,7 @@
 const api_key="u2tXL4wQEEJaa0E6OKHgypM1jhEthjjs"
 const searchEndpoint = "api.giphy.com/v1/gifs/search"
 
-let searchQuery = "wedding"
+let searchQuery = "knowledge"
 
 fetch(`http://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${searchQuery}`)
     .then((response) => {
@@ -21,6 +21,6 @@ fetch(`http://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${searchQuery}`)
     const imageHtml = `<img src=${gifData.images.preview_gif.url}/>`
     pageHtml.push(imageHtml);
     });
-    document.getElementById('gif-container').innerHTML = pageHtml.join('');
+    document.getElementById('gif-display').innerHTML = pageHtml.join('');
 })
 
