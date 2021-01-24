@@ -5,18 +5,20 @@
 }
 
 #current-month {
-    font-size: 5px;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+#current-date {
+    font-size: 12px;
 }
 
 
-h4 {
+/* h4 {
     font-size: 14px;
     font-family: korolev, sans-serif;
     font-weight: 300;
     margin-bottom: 30px;
-}
+} */
 
 .calendar-container {
     width: 370px;
@@ -47,7 +49,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0 20px 0 20px;
     text-align: center;
 
 }
@@ -104,5 +106,43 @@ h4 {
 
 .next-date {
     background-color:  rgb(146, 134, 127);
+}
+
+.today {
+    background-color: maroon;
+}
+
+#on-this-day {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 75px;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 25px;
+}
+
+button {
+    height: 50px;
+    width: 15%;
+    border: solid black;
+    border-width: 1px;
+    border-radius: 5px 20px 5px;
+    background-color: rgb(161, 159, 158);
+    margin-left: 10px;
+}
+
+#input {
+    height:50px;
+    width: 50%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 18px;
 }
 
