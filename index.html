@@ -12,7 +12,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://use.typekit.net/qob5aoz.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/calendar-style.css" />
     <link rel="stylesheet" href="assets/css/planner-style.css" />
@@ -33,7 +36,7 @@
     </div>
     <!---------------------------- Reminder window -------------------------->
     <div class="row">
-      <div class="medium-6 column" id="left-column">
+      <div class="medium-6 columns" id="left-column">
       <!-------------------------- Gif -------------------------------------->
         <div id="gif"></div>
   
@@ -42,12 +45,12 @@
       <div class="calendar-container">
         <div id="calendar">
           <div class="month">
-            <p class="prev">Prev</p>
+            <p class="prev" id="prev-toggle">Prev</p>
             <div class="date">
               <h3 id="current-month"></h3>
               <h4 id="current-date"></h4>
             </div>
-            <p class="next">Next</p>
+            <p class="next" id="next-toggle">Next</p>
           </div>
 
           <div class="weekdays">
@@ -65,15 +68,15 @@
     </div>
   <!-- </div> -->
 
-
-      <!-- <div class="row"> -->
         <!----------------------- Numbers API info display ---------------------->
 
-        <div class="large-6 column" id="right-column">
-          <h3 id="number-header">Numbers Rule The Universe</h3>
-          <h5>Pythagoras</h5>
-          <input id="input" placeholder="Type a number. Any number." /><button id="search">Search</button>
+        <div class="large-6 columns" id="right-column">
+          <h2 id="number-header">Number Rules The Universe</h2>
+          <h5> - Pythagoras</h5>
+          <div id="input-div">
+          <input id="input" placeholder="Type a number. Learn something." /><button id="search">Search</button>
           <div id="output"></div>
+        </div>
           <!--------------- This is where the user input query will display ------->
           <div id="input-fact"></div>
       

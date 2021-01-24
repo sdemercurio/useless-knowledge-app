@@ -204,6 +204,7 @@ function getNumFacts() {
       $("#input-fact").append(numFactDiv);
       
     });
+    $("#input-fact").html("");
    
 }
 
