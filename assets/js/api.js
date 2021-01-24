@@ -5,22 +5,33 @@ let searchQuery = "knowledge"
 
 fetch(`http://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${searchQuery}`)
     .then((response) => {
-        if (response.ok) {
-            console.log(response);
-            return response.text()
-        } else {
-            console.log("This Failed?!");
-        }
-})
-.then((responseData) => {
-    const parsedData = JSON.parse(responseData);
-    const currentPageData=parsedData.data
-    const pageHtml = [];
-    currentPageData.forEach(gifData =>{
+        var results = response.data;
 
-    const imageHtml = `<img src=${gifData.images.preview_gif.url}/>`
-    pageHtml.push(imageHtml);
-    });
-    document.getElementById('gif-display').innerHTML = pageHtml.join('');
+          // Looping over every result item
+          for (var i = 0; i < 1 ; i++) {
+
+              var gifDiv = $("<div>");
+
+              // Storing the result item's rating
+              var rating = results[i].rating;
+
+              // Creating a paragraph tag with the result item's rating
+              var p = $("<p>").text("Rating: " + rating);
+
+              // Creating an image tag
+              var personImage = $("<img>");
+
+              // Giving the image tag an src attribute of a proprty pulled off the
+              // result item
+              personImage.attr("src", results[i].images.fixed_height.url);
+
+              // Appending the paragraph and personImage we created to the "gifDiv" div we created
+              gifDiv.append(p);
+              gifDiv.append(personImage);
+
+              // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
+              $("#gifs-appear-here").prepend(gifDiv);
+            }
+          }
 })
 

@@ -30,14 +30,14 @@ body {
     padding: 20px;
 }
 
-#gif {
+/*#gif {
     width: 370px;
     height: 190px;
     border: solid black;
     border-width: 1px;
     background-color:  rgb(209, 196, 190);
     box-shadow: 0 0.5rem 1rem  rgb(65, 63, 62);
-}
+}*/
 
 #gif-display {
     font-family: korolev-compressed, sans-serif;
