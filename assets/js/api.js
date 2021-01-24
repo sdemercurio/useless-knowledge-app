@@ -27,5 +27,11 @@ fetch(`http://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${searchQuery}`)
     const image = currentPageData[randomNumber].images.original.url;
 
     // Attaches image to style attribute of gif container
-    document.getElementById('gif').style.backgroundImage=`url(${image})`;
+    // document.getElementById('gif').style.backgroundImage=`url(${image})`;
+
+    $(".days").on("click", function() {
+    let gifDiv = $("#gif").css("background-image", `url(${image})`);
+    gifDiv.append(image);
+  })
+  $("#gif").html("");
 })
