@@ -1,6 +1,5 @@
 const date = new Date();
 
-<<<<<<< HEAD
 const priorMonth = new Date();
 priorMonth.setDate(1);
 priorMonth.setMonth(priorMonth.getMonth()-1);
@@ -9,8 +8,6 @@ const nextMonth = new Date();
 nextMonth.setDate(1);
 nextMonth.setMonth(nextMonth.getMonth()+1);
 
-=======
->>>>>>> main
 const renderCalendar = () => {
   // Figuring out the extra days before and after each month
   date.setDate(1); // Gives the day index
@@ -66,11 +63,7 @@ const renderCalendar = () => {
   ];
 
   // Using .getMonth method to display the months
-<<<<<<< HEAD
   $("#current-month").html(months[date.getMonth()]);
-=======
-  $("#current-month").html(months[date.getMonth]);
->>>>>>> main
 
   $("#current-date").html(new Date().toLocaleDateString());
   console.log(new Date().toLocaleDateString());
@@ -81,12 +74,8 @@ const renderCalendar = () => {
   // This is how we get the the first day of the month on the
   // correct day, and the last few days of the previous month
   for (let x = firstDayIndex; x > 0; x--) {
-<<<<<<< HEAD
     days += `<div class="prev-date" data-month="${priorMonth.getMonth() + 1}" data-day="${prevLastDay - x + 1}">${prevLastDay - x + 1}</div>`;
     // <div data-month="01" data-day="23"></div>
-=======
-    days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
->>>>>>> main
   }
 
   // Highlight current day
@@ -95,30 +84,18 @@ const renderCalendar = () => {
       i === new Date().getDate() &&
       date.getMonth() === new Date().getMonth()
     ) {
-<<<<<<< HEAD
       days += `<div class="today" data-month="${date.getMonth() + 1}" data-day="${i}">${i}</div>`;
     } else {
       days += `<div data-month="${date.getMonth() + 1}" data-day="${i}">${i}</div>`;
-=======
-      days += `<div class="today">${i}</div>`;
-    } else {
-      days += `<div>${i}</div>`;
->>>>>>> main
     }
   }
   // displaying the first few days of the next month
   // j = 1 becasue each month begins with 1
   for (let j = 1; j <= nextDays; j++) {
-<<<<<<< HEAD
     days += `<div class="next-date" data-month="${nextMonth.getMonth() + 1}" data-day="${j}">${j}</div>`;
     
   }
   $(".days").html(days);
-=======
-    days += `<div class="next-date">${j}</div>`;
-    $(".days").html(days);
-  }
->>>>>>> main
 };
 
 // click event for previous and next months
@@ -186,7 +163,6 @@ renderCalendar();
 //     console.log(queryUrl);
 
 function showCalFacts() {
-<<<<<<< HEAD
 
     $(".days").on("click", function(event) {
         let dataMonth = $(event.target).attr("data-month");
@@ -199,11 +175,6 @@ function showCalFacts() {
   // Change param to "date-selected" or something
   // fetch(`http://numbersapi.com/${select-date}date`)
   fetch("http://numbersapi.com/" + dataMonth + "/" + dataDay + "/date")
-=======
-  // Change param to "date-selected" or something
-  // fetch(`http://numbersapi.com/${select-date}date`)
-  fetch("http://numbersapi.com/01/23/date")
->>>>>>> main
     .then((response) => response.text())
     .then((data) => {
       console.log(data);
@@ -213,14 +184,10 @@ function showCalFacts() {
 
       factDiv.append(factInfo);
       $("#date-fact").append(factDiv);
-<<<<<<< HEAD
       
 
     });
 });
-=======
-    });
->>>>>>> main
 }
 
 showCalFacts();
@@ -232,7 +199,6 @@ function getNumFacts() {
     .then((response) => response.text())
     .then((data) => {
       console.log(data);
-<<<<<<< HEAD
 
       let numFactDiv = $("<div>").addClass("card col-3-lg");
       let numFactInfo = $("<p>").addClass("num-fact-display").html(data);
@@ -251,24 +217,5 @@ $("#search").on("click", function () {
 
   $("#input").empty();
 
-=======
-
-      let numFactDiv = $("<div>").addClass("card col-3-lg");
-      let numFactInfo = $("<p>").addClass("num-fact-display").html(data);
-
-      numFactDiv.append(numFactInfo);
-      $("#input-fact").append(numFactDiv);
-    });
-}
-
-// Search Button
-//=======================================================
-$("#search").on("click", function () {
-  let search = "";
-  search = $("#input").val();
-
-  $("#input").empty();
-
->>>>>>> main
   getNumFacts(search);
 });
