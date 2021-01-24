@@ -3,7 +3,7 @@ const searchEndpoint = "api.giphy.com/v1/gifs/search"
 
 let searchQuery = "wedding"
 
-fetch(`http://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${searchQuery}`)
+fetch(`http://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${searchQuery}&limit=1`)
     .then((response) => {
         if (response.ok) {
             console.log(response);
