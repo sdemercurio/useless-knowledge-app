@@ -33,7 +33,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 50px;
     margin-bottom: 30px;
     border-radius: 15px;
     
@@ -144,10 +144,12 @@ button {
     height:50px;
     width: 75%;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 100;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-style: normal;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #A8DEE9;
+    border: solid #122A51;
+    border-width: 2px;
 }
 
