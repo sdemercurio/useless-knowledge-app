@@ -1,36 +1,31 @@
-// const api_key="u2tXL4wQEEJaa0E6OKHgypM1jhEthjjs"
-// const searchEndpoint = "api.giphy.com/v1/gifs/search"
+const api_key="u2tXL4wQEEJaa0E6OKHgypM1jhEthjjs";
+const searchEndpoint = "api.giphy.com/v1/gifs/search";
 
-// let searchQuery = "knowledge"
+// Sets search query to be "knowledge"
+let searchQuery = "knowledge";
 
-// fetch(`http://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${searchQuery}`)
-//     .then((response) => {
-//         var results = response.data;
+// Does GET XHR request for giphy API for searchQuery
+fetch(`http://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${searchQuery}`)
+    .then((response) => {
+        if (response.ok) {
+            console.log(response);
+            // Pass response as string if successful
+            return response.text();
+        } else {
+            console.log("This Failed?!");
+        }
+})
+.then((responseData) => {
+    const parsedData = JSON.parse(responseData);
+    const currentPageData = parsedData.data;
+    console.log(currentPageData);
+    
+    // Pick a random number between 0 and 50
+    const randomNumber = Math.floor(Math.random() * Math.floor(50));
 
-//           // Looping over every result item
-//           for (var i = 0; i < 1 ; i++) {
+    // Sets the image to be a random image from the giphy api
+    const image = currentPageData[randomNumber].images.original.url;
 
-//               var gifDiv = $("<div>");
-
-//               // Storing the result item's rating
-//               var rating = results[i].rating;
-
-//               // Creating a paragraph tag with the result item's rating
-//               var p = $("<p>").text("Rating: " + rating);
-
-//               // Creating an image tag
-//               var personImage = $("<img>");
-
-//               // Giving the image tag an src attribute of a proprty pulled off the
-//               // result item
-//               personImage.attr("src", results[i].images.fixed_height.url);
-
-//               // Appending the paragraph and personImage we created to the "gifDiv" div we created
-//               gifDiv.append(p);
-//               gifDiv.append(personImage);
-
-//               // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-//               $("#gifs-appear-here").prepend(gifDiv);
-//             }
-//           })
-
+    // Attaches image to style attribute of gif container
+    document.getElementById('gif').style.backgroundImage=`url(${image})`;
+})
