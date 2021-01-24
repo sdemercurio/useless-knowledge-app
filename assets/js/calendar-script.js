@@ -183,6 +183,7 @@ function showCalFacts() {
       $("#date-fact").append(factDiv);
 
     });
+    $("#date-fact").html("");
 });
 }
 
@@ -203,6 +204,7 @@ function getNumFacts() {
       $("#input-fact").append(numFactDiv);
       
     });
+   
 }
 
 // Search Button

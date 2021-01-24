@@ -12,31 +12,33 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://use.typekit.net/qob5aoz.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qob5aoz.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/calendar-style.css" />
     <link rel="stylesheet" href="assets/css/planner-style.css" />
   </head>
   <body>
-    <div class="row">
+    
+    <div class="row align-left">
       <!------------------------------- Logo ---------------------------------->
-      <div class="lg-12 column" >
+      <div class="large-12 column">
         <img id="logo" src="assets/Images/new_logo.png" alt="obliti logo" />
-        <div id="randomFact" class="randomFactToday">
       </div>
-      
+    </div>
+
+    <div class="row">
+      <div class="large-12 column">
+        <div id="randomFact" class="randomFactToday"></div>
+      </div>
     </div>
     <!---------------------------- Reminder window -------------------------->
-    
-    <div class="small-12 medium-6 large-4 columns" id="left-column">
-      <div id="reminder-window">
-        <p id="display-reminder">Reminder displays here</p>
-      </div>
+    <div class="row">
+      <div class="medium-6 column" id="left-column">
       <!-------------------------- Gif -------------------------------------->
-      <div id="gif">
-      </div>
+        <div id="gif"></div>
+  
+      <!-------------------------- Calendar -------------------------------------->
 
-      <!-------------------------- Gif --------------------------------------> 
       <div class="calendar-container">
         <div id="calendar">
           <div class="month">
@@ -57,31 +59,33 @@
             <div>Fri</div>
             <div>Sat</div>
           </div>
-          <div class="days">
-          </div>
+          <div class="days"></div>
         </div>
       </div>
     </div>
+  <!-- </div> -->
 
-    <!---------------------------- Date and Time ---------------------------->
 
-    <div class="row">
-    <!---------------------------- Date and Time ---------------------------->
+      <!-- <div class="row"> -->
+        <!----------------------- Numbers API info display ---------------------->
 
-    <div class="row">
-    <!----------------------- Numbers API info display ---------------------->
-      
-      <div class="small-12 medium-6 large-8 columns">
-          <input id="input" placeholder="Type a number. Any number."><button id="search">Search</button>
+        <div class="large-6 column" id="right-column">
+          <h3 id="number-header">Numbers Rule The Universe</h3>
+          <h5>Pythagoras</h5>
+          <input id="input" placeholder="Type a number. Any number." /><button id="search">Search</button>
           <div id="output"></div>
-    <!--------------- This is where the user input query will display ------->
+          <!--------------- This is where the user input query will display ------->
           <div id="input-fact"></div>
-      <!--------------- This is where the calendar click will display --------->
-      <h2 id="on-this-day">On this Day</h2>
-      <div id="date-fact"></div>
-</div>
+      
+
+      
+          <!--------------- This is where the calendar click will display --------->
+          <h2 id="on-this-day">On this Day</h2>
+          <div id="date-fact"></div>
+        </div>
       </div>
-    </div>
+        
+      
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>

@@ -32,6 +32,5 @@ fetch(`http://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${searchQuery}`)
               // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
               $("#gifs-appear-here").prepend(gifDiv);
             }
-          }
-})
+          })
 
