@@ -6,7 +6,7 @@ let giphyData = {};
 let searchQuery = "knowledge";
 
 // Get gifs from Giphy - We have a limited amount of calls to giphy available
-fetch(`http://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${searchQuery}`)
+fetch(`https://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${searchQuery}`)
     .then((response) => {
         if (response.ok) {
             // Pass response as string if successful
