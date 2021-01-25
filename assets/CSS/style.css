@@ -4,45 +4,102 @@
     box-sizing: border-box;
 }
 
+#logo {
+    width: 368px;
+    height: 134px;
+}
+
 body {
-    margin-top: 25px;
-    margin-left: 50px;
+    margin: 50px 25px 70px 25px;
+
 }
 
-#reminder-window {
-    color: grey;
-    width: 370px;
-    height: 80px;
-    border: 2px solid rgb(127, 148, 130);
-}
-
-#display-reminder {
-    font-family: korolev-compressed, sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 25px;
-    letter-spacing: 1px;
+h2 {
+    color: #F47840;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
     text-align: center;
-    padding: 20px;
+    padding-right: 30px;
+    line-height: 4rem;
+}
+
+h3 {
+    color: #F47840;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+h5 {
+    color: #F47840;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: right;
+    padding-right: 60px;
+    margin-bottom: 40px;
+    line-height: 2rem;
+
 }
 
 #gif {
-    width: 370px;
-    height: 190px;
-    border: solid black;
+        width: 370px;
+        height: 190px;
+        background-size: cover;
+
+} 
+
+#randomFact {
+    height: min-content;
+    width: 100%;
+    background-color:  #DCEFF4;
+    border-radius: 10px;
     border-width: 1px;
-    background-color:  rgb(209, 196, 190);
     box-shadow: 0 0.5rem 1rem  rgb(65, 63, 62);
+    background-size: cover;
 }
 
-#gif-display {
-    font-family: korolev-compressed, sans-serif;
-    font-weight: 200;
-    font-style: normal;
+#input-fact {
+    width: 100%;
+    height: 150px;
+    padding: 20px 0 20px 0;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
-    letter-spacing: 1px;
-    text-align: center;
-    justify-content: center;
-    padding: 60px;
+    color: #122A51;
 }
 
+#date-fact {
+    width: 100%;
+    height: 200px;
+    padding: 20px 15px 20px 15px;
+    text-align: left;
+    
+    border-radius: 20px;
+    margin: 20px 0 100px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #122A51;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.randomFactToday {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: center;
+    background-color: #DCEFF4;
+    color: #122A51;
+    padding-left: .5cm;
+    height: min-content;
+}
+
+.rowHeight {
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+}
