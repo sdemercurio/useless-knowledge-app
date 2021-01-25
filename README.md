@@ -94,4 +94,5 @@ Project is: _in progress_
 This was a fun app to work on and I hope to expand on it in the near future.
 
 Link to deployed page: https://sdemercurio.github.io/Obliti/
+Link to repo: https://github.com/sdemercurio/Obliti.git
 
