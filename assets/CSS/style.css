@@ -56,8 +56,9 @@ h5 {
     background-color:  #DCEFF4;
     border-radius: 10px;
     border-width: 1px;
-    display:inline-block;
-    margin: 30px 0 20px 0;
+    background-color:  rgb(209, 196, 190);
+    box-shadow: 0 0.5rem 1rem  rgb(65, 63, 62);
+    background-size: cover;
 }
 
 #input-fact {
