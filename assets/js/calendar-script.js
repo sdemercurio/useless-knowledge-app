@@ -167,9 +167,6 @@ function showCalFacts() {
     $(".days").on("click", function(event) {
         let dataMonth = $(event.target).attr("data-month");
         let dataDay = $(event.target).attr("data-day");
-
-        $("#date-fact").html("");
-
           
       
   // Change param to "date-selected" or something
@@ -184,9 +181,9 @@ function showCalFacts() {
 
       factDiv.append(factInfo);
       $("#date-fact").append(factDiv);
-      
 
     });
+    $("#date-fact").html("");
 });
 }
 
@@ -207,6 +204,8 @@ function getNumFacts() {
       $("#input-fact").append(numFactDiv);
       
     });
+    $("#input-fact").html("");
+   
 }
 
 // Search Button
@@ -219,3 +218,5 @@ $("#search").on("click", function () {
 
   getNumFacts(search);
 });
+
+
