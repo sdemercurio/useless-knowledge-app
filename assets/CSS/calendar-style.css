@@ -144,10 +144,8 @@ button {
     height:50px;
     width: 75%;
     text-align: center;
-    font-family: 'Libre Baskerville', serif;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-style: normal;
-    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
     background-color: #A8DEE9;
     border: solid #122A51;
     border-width: 2px;
