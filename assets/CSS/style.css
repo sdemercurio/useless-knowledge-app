@@ -51,7 +51,7 @@ h5 {
 } 
 
 #randomFact {
-    height: 55px;
+    height: min-content;
     width: 100%;
     background-color:  #DCEFF4;
     border-radius: 10px;
@@ -88,3 +88,19 @@ p {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.randomFactToday {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: center;
+    background-color: #DCEFF4;
+    color: #122A51;
+    padding-left: .5cm;
+    height: min-content;
+}
+
+.rowHeight {
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+}
