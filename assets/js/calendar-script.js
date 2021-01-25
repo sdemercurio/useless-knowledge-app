@@ -187,9 +187,9 @@ function showCalFacts() {
 
       factDiv.append(factInfo);
       $("#date-fact").append(factDiv);
-      
 
     });
+    $("#date-fact").html("");
 });
 }
 
@@ -210,6 +210,8 @@ function getNumFacts() {
       $("#input-fact").append(numFactDiv);
       
     });
+    $("#input-fact").html("");
+   
 }
 
 // Search Button
@@ -222,3 +224,5 @@ $("#search").on("click", function () {
 
   getNumFacts(search);
 });
+
+

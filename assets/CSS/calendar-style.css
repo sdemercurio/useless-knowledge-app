@@ -5,20 +5,22 @@
 }
 
 #current-month {
-    font-size: 10px;
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
 }
 
 #current-date {
     font-size: 12px;
+    text-align: center;
 }
 
-
-/* h4 {
+h4 {
     font-size: 14px;
     font-family: korolev, sans-serif;
     font-weight: 300;
     margin-bottom: 30px;
-} */
+}
 
 .calendar-container {
     width: 370px;
@@ -26,41 +28,58 @@
     font-size: 62.5%;
     width: 370px;
     height:auto;
-    background-color: rgb(114, 108, 105);
+    background-color:#53BECA;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 50px;
     margin-bottom: 30px;
+    border-radius: 15px;
+    
 }
 
 #calendar {
     width: 370px;
     height:430px;
-    background-color:  rgb(170, 159, 154);
-    box-shadow: 0 0.5rem 1rem  rgb(65, 63, 62);
+    border-radius: 15px;
+    /*background-color:  rgb(170, 159, 154);
+    border-radius: 5px 20px 5px;*/
+    
 }
 
 .month  {
     width: 100%;
     height: 85px;
-    background-color: rgb(66, 62, 60);
+    background-color: #122A51;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
     padding: 0 20px 0 20px;
+    border-radius: 15px;
     
 
 }
 
-.month p {
-    font-size: 14px;
+#prev-toggle {
+    font-size: 15px;
     font-family: korolev, sans-serif;
     font-weight: 300;
     font-style: normal;
     cursor: pointer;
     display: inline-block;
+    margin-top: 15px;
+}
+
+#next-toggle {
+    font-size: 15px;
+    font-family: korolev, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 15px;
 }
 
 .weekdays   {
@@ -72,7 +91,7 @@
     align-items: center;
     justify-content:space-evenly;
     font-size: 12px;
-    background-color: rgb(131, 123, 119);;
+    border-radius: 5px 20px 5px;
 }
 
 .days {
@@ -101,48 +120,36 @@
 }
 
 .prev-date {
-    background-color: rgb(146, 134, 127);
+    background-color: #1f4686;
 }
 
 .next-date {
-    background-color:  rgb(146, 134, 127);
+    background-color:   #1f4686;
 }
 
 .today {
-    background-color: maroon;
-}
-
-#on-this-day {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 75px;
-}
-
-p {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 25px;
+    background-color:#F47840;
 }
 
 button {
     height: 50px;
     width: 15%;
-    border: solid black;
-    border-width: 1px;
     border-radius: 5px 20px 5px;
-    background-color: rgb(161, 159, 158);
+    background-color: #122A51;
+    color: #F47840;
     margin-left: 10px;
 }
 
 #input {
     height:50px;
-    width: 50%;
+    width: 75%;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 100;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-style: normal;
-    font-size: 18px;
+    font-size: 20px;
+    background-color: #A8DEE9;
+    border: solid #122A51;
+    border-width: 2px;
 }
 
