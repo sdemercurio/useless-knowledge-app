@@ -131,7 +131,7 @@ function showCalFacts() {
       
   // Change param to "date-selected" or something
   // fetch(`http://numbersapi.com/${select-date}date`)
-  fetch("http://numbersapi.com/" + dataMonth + "/" + dataDay + "/date")
+  fetch("https://numbersapi.com/" + dataMonth + "/" + dataDay + "/date")
     .then((response) => response.text())
     .then((data) => {
       console.log(data);
@@ -152,7 +152,7 @@ showCalFacts();
 function getNumFacts() {
   let input = $("#input").val();
 
-  fetch(`http://numbersapi.com/${input}`)
+  fetch(`https://numbersapi.com/${input}`)
     .then((response) => response.text())
     .then((data) => {
       console.log(data);
