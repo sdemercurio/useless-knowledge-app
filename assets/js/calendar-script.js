@@ -170,6 +170,9 @@ function showCalFacts() {
 
         $("#date-fact").html("");
 
+        // Update the gif!
+        updateGif();
+
           
       
   // Change param to "date-selected" or something
