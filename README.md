@@ -93,6 +93,6 @@ Use this [project presentation template](https://docs.google.com/presentation/d/
 Project is: _in progress_
 This was a fun app to work on and I hope to expand on it in the near future.
 
-Link to deployed page: https://sdemercurio.github.io/Obliti/
-Link to repo: https://github.com/sdemercurio/Obliti.git
+Link to deployed page: https://sdemercurio.github.io/nalej/
+Link to repo: https://github.com/sdemercurio/nalej.git
 
