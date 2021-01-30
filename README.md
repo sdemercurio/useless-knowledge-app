@@ -10,6 +10,7 @@ The perfect companion for the trivia obsessed, and those who pride themselves in
 - [Demo](#demo)
 - [Technologies](#technologies)
 - [Status](#status)
+- [Developers](#developers)
 
 ## General info.
 
@@ -31,13 +32,11 @@ THEN I am presented with an interesting fact centered around that number.
 ```
 ## Process
 
-```
 ![nalej Logo](assets/Images/nalej_logo.jpg)
 
 ![wireframe](assets/Images/nalej_wireframe.jpg)
 
 ![finished product](assets/Images/process_1.jpg)
-```
 
 ## Acceptance Criteria
 
@@ -60,6 +59,7 @@ THEN I am presented with an interesting fact centered around that number.
 * Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
 
 * Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+
 ```
 ## Presentation Requirements
 
@@ -92,6 +92,14 @@ Use this [project presentation template](https://docs.google.com/presentation/d/
 ## Status
 Project is: _in progress_
 This was a fun app to work on and I hope to expand on it in the near future.
+
+## Developers
+* Dionne Smith-Jackson
+  Email: dionnesmithjackson@gmail.com
+* Robert Sunde
+  Email: robertsundemsu@gmail.com
+* Sarah DeMercurio
+  Email: sarah.l.demercurio@gmail.com
 
 Link to deployed page: https://sdemercurio.github.io/nalej/
 Link to repo: https://github.com/sdemercurio/nalej.git
