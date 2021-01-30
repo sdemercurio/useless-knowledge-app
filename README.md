@@ -36,7 +36,7 @@ THEN I am presented with an interesting fact centered around that number.
 
 ![wireframe](assets/Images/nalej_wireframe.jpg)
 
-![finished product](assets/Images/process_1.jpg)
+![finished product](assets/Images/process_1.JPG)
 
 ## Acceptance Criteria
 
